@@ -1,0 +1,6 @@
+services:
+  custom_movies.normalizer.movie:
+    class: Drupal\custom_movies\Normalizer\MovieEntityNormalizer
+    arguments: ['@entity_type.manager', '@entity_type.repository', '@entity_field.manager']
+    tags:
+      - { name: normalizer }

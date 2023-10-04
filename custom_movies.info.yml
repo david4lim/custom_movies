@@ -1,0 +1,10 @@
+name: 'Custom Movies Challenge'
+type: module
+description: 'Custom module for managing movies'
+package: Custom
+core_version_requirement: ^10
+dependencies:
+  - rest:rest
+  - serialization:serialization
+  - taxonomy:taxonomy
+  - views:views

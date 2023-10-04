@@ -1,0 +1,22 @@
+<?php declare(strict_types=1);
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Custom movies module.
+ */
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Implements hook_install().
+ *
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ */
+function custom_movies_install(): void {
+  // Create default taxonomy terms.
+  foreach (['Action', 'Comedy', 'Drama'] as $term) {
+    Term::create([
+      'name' => $term,
+      'vid' => 'genre',
+    ])->save();
+  }
+}

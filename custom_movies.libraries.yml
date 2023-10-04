@@ -1,0 +1,10 @@
+movies.admin_form:
+  js:
+    js/movies-admin-form.js: {}
+  css:
+    theme:
+      css/movies-admin-form.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once

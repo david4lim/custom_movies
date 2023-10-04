@@ -1,0 +1,21 @@
+#movie-add-form, #movie-edit-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#movie-add-form > div, #movie-edit-form > div {
+  padding-left: 15px;
+}
+
+#movie-add-form #edit-actions, #movie-edit-form #edit-actions {
+  width: 100%;
+}
+
+/* Force the error styles in case the admin theme does not support them. */
+#movie-add-form .form-element.error, #movie-edit-form .form-element.error {
+  border-width: 2px;
+  border-color: #dc2323;
+}
+#movie-add-form .form-item__label.has-error, #movie-edit-form .form-item__label.has-error {
+  color: #dc2323;
+}
